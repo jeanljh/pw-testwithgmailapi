@@ -1,0 +1,53 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  # schedule:
+  # - cron: '0 * * * *'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  test:
+    timeout-minutes: 120
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+    - name: Running npm ci
+      run: npm ci
+    - name: Running npm install 📦
+      run: npm install
+    - name: Running npx playwright install 📦
+      run: npx playwright install-deps
+    - name: Running npx playwright test 🛎️
+      run: xvfb-run --auto-servernum -- npm test
+    - uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30
+    - name: Show directory
+      if: ${{always()}}
+      run: pwd & ls
+    - name: Deploying Github Pages 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      if: always()
+      with:
+        branch: gh-pages
+        folder: playwright-report
+#     - name: Rendering HTML to PDF 📁
+#       uses: fifsky/html-to-pdf-action@master
+#       if: always()
+#       with:
+#         htmlFile: ./playwright-report/index.html
+#         outputFile: ./playwright-report/tn_report_${{github.run_number}}.pdf
+#         pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
