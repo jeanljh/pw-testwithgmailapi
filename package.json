@@ -1,7 +1,7 @@
 {
   "name": "pw-loginwithapi",
   "version": "1.0.0",
-  "description": "example of test automation with gmail api to access gmail directly",
+  "description": "example of test automation with gmail api to access email directly",
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test"
