@@ -1,0 +1,16 @@
+{
+  "name": "pw-loginwithapi",
+  "version": "1.0.0",
+  "description": "example of test automation with gmail api to access gmail directly",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "author": "jean",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.24.1",
+    "playwright": "^1.24.1",
+    "typescript": "^4.7.4"
+  }
+}

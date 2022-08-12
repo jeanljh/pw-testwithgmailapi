@@ -1,0 +1,9 @@
+{
+    "email": "sdetqa1@gmail.com",
+    "urlToken": "https://accounts.google.com/o/oauth2/token",
+    "urlMessages": "https://gmail.googleapis.com/gmail/v1/users/me/messages/",
+    "client_id": "249856752949-8664r6vg4771kv5ieq9jko2kjc1u026b.apps.googleusercontent.com",
+    "client_secret": "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",
+    "refresh_token": "1//04EmkQ2BOBtMACgYIARAAGAQSNwF-L9IrGSc63_BA6eWqKcyg3fm9r-4c5S57A-V-q-I03n1QRrKw7Qs5iSOOHdqX2NdAZSa0ivU",
+    "grant_type": "refresh_token"
+}
