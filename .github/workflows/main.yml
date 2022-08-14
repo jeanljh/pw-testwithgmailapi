@@ -21,6 +21,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
+    - name: create-json
+      uses: jsdaniell/create-json@1.1.2
+      with:
+        name: "data.json"
+        json: ${{ secrets.DATA }}
+        dir: 'fixtures/'       
     - name: Running npm ci
       run: npm ci
     - name: Running npm install 📦
