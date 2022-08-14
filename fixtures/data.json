@@ -1,9 +1,9 @@
 {
-    "email": "sdetqa1@gmail.com",
+    "email": "sdetqa3@gmail.com",
     "urlToken": "https://accounts.google.com/o/oauth2/token",
     "urlMessages": "https://gmail.googleapis.com/gmail/v1/users/me/messages/",
-    "client_id": "249856752949-8664r6vg4771kv5ieq9jko2kjc1u026b.apps.googleusercontent.com",
-    "client_secret": "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",
-    "refresh_token": "1//04EmkQ2BOBtMACgYIARAAGAQSNwF-L9IrGSc63_BA6eWqKcyg3fm9r-4c5S57A-V-q-I03n1QRrKw7Qs5iSOOHdqX2NdAZSa0ivU",
+    "client_id": "8075139677-1gfa2h3d4p7g5bu8u8kh51q1hhqga5k1.apps.googleusercontent.com",
+    "client_secret": "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",
+    "refresh_token": "1//04-VyhARlEuLoCgYIARAAGAQSNwF-L9Irfp9eay7QMJAC3lycWW_-JBSsoYkW75X7aOzk5YanA4n9OsDWrYX65M4mFuEucvNh1fM",
     "grant_type": "refresh_token"
 }
