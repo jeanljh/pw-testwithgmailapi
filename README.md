@@ -6,6 +6,6 @@ https://jeanljh.github.io/pw-testwithgmailapi/
 
 Example of test automation with Playwright & GMail API to access email directly.
 
-CI integration with GitHub Actions and GitHub Pages to publish the generated Allure HTML report.
+CI integration with GitHub Actions and GitHub Pages to publish the generated HTML reporter.
 
 GitHub page to view test report: https://jeanljh.github.io/pw-testwithgmailapi/
